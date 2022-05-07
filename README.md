@@ -1,0 +1,1 @@
+App to learn clean and modern Android architecture and MVVM using Retrofit and Room
