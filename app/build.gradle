@@ -40,11 +40,11 @@ dependencies {
     def materialVersion = "1.6.0"
     def constraintLayoutVersion = "2.1.3"
     def coroutinesVersion = "1.6.1"
+    def retrofitVersion = "2.9.0"
+    def retrofitGsonConverterVersion = "2.9.0"
     def junitVersion = "4.13.2"
     def junitAndroidVersion = "1.1.3"
     def espressoCoreVersion = "3.4.0"
-    def retrofitVersion = "2.9.0"
-    def retrofitGsonConverterVersion = "2.9.0"
 
     implementation "androidx.core:core-ktx:$coreKtxVersion"
     implementation "androidx.appcompat:appcompat:$appCompatVersion"
