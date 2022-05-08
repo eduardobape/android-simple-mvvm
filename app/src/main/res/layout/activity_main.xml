@@ -5,16 +5,21 @@
     android:id="@+id/rootMain"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/background_main_activity"
+    android:padding="8dp"
     tools:context=".ui.view.MainActivity">
 
     <TextView
         android:id="@+id/tvChuckQuote"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:text="Chuck Quote"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:gravity="center"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="All the religions of the world believe that reading Chuck Norris facts aloud daily increases your chances of surviving till the next day." />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
