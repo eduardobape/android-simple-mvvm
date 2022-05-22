@@ -7,3 +7,5 @@ data class ChuckQuote(
     @SerializedName("value")
     val quoteText: String
 )
+
+fun ChuckQuote.sanitized(): String = quoteText.trim().replaceFirstChar { it.uppercase() }

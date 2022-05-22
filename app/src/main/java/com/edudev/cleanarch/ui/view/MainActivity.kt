@@ -3,6 +3,7 @@ package com.edudev.cleanarch.ui.view
 import android.os.Bundle
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
+import com.edudev.cleanarch.data.model.sanitized
 import com.edudev.cleanarch.databinding.ActivityMainBinding
 import com.edudev.cleanarch.ui.viewmodel.ChuckQuoteViewModel
 
@@ -22,7 +23,9 @@ class MainActivity : AppCompatActivity() {
         }
 
         chuckQuoteViewModel.chuckQuote.observe(this) { quote ->
-            binding.tvChuckQuote.text = quote?.quoteText ?: ""
+            quote?.let {
+                binding.tvChuckQuote.text = it.sanitized()
+            }
         }
     }
 }
